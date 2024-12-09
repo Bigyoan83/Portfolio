@@ -1,0 +1,90 @@
+.group_formation {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin: 0;
+    background-image: url(Image/Fond-gris.jpg);
+    color: white;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Remplit tout en respectant le ratio */
+    z-index: -1;
+}
+
+.tite_formation {
+    text-align: center;
+    font-size: 35px;
+}
+
+.bloc_1 {
+    display: flex;
+    margin: 30px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bloc_2 {
+    display: flex;
+    margin: 30px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formation {
+    position: relative; /* Nécessaire pour que ::before soit positionné par rapport à l'élément */
+    background-color: rgb(128, 128, 128);
+    width: 500px;
+    height: 300px;
+    padding: 80px;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: x-large;
+    cursor: pointer;
+    z-index: 1; /* Met le texte au-dessus */
+    overflow: hidden; /* Assure que l'image de fond ne déborde pas */
+}
+
+.formation::before {
+    content: ""; /* Nécessaire pour ::before */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../Image/CEH.png");
+    background-size: 400px 200px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    opacity: 30%;
+    border-radius: 15px; 
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+#maestris::before {
+    background-image: url("../Image/maestris.png");
+    background-size: 400px 400px; 
+
+}
+
+#recoveo::before {
+    background-image: url("../Image/recoveo.png");
+    background-size: 350px 350px; 
+
+}
+
+#BAC::before {
+    background-image: url("../Image/BAC.png");
+    background-size: 400px 400px;
+
+}
+
+#secour::before {
+    background-image: url("../Image/secour.png");
+    background-size: 300px 300px;
+}
