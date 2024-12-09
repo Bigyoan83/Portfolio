@@ -34,15 +34,15 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             os: {
                 title: "Systèmes d'exploitation",
-                description: "Windows, Kali Linux, etc.",
+                description: "Windows, Kali Linux",
             },
             software: {
                 title: "Logiciels divers",
-                description: "Wireshark, Nmap, Hexascan, etc.",
+                description: "Wireshark, Nmap, Hexascan",
             },
             office: {
                 title: "Pack Office",
-                description: "Word, Excel, PowerPoint, etc.",
+                description: "Word, Excel, PowerPoint",
             },
         };
 
