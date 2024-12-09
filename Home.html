@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="viewport"content="width=device-widht,initial-scale=1.0">
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <header class="hearder_portfolio">
+            <div class="herder_bar">
+                <div class="my_name">
+                    <a href="Home.html" class="return_header">MORITZ YOAN</a>
+                </div>
+            </div>
+            <div class="nav_barre" id="navbar">
+                <nav>
+                    <ul>
+                        <div>
+                            <a href="#monProfil">MON PROFIL</a>
+                            <a href="#mesFormations">MES FORMATIONS</a>
+                            <a href="#mesCompétences">MES COMPETENCES</a>
+                            <a href="#mesExpériences">MES EXPERIENCES</a>
+                            <a href="#mesProjets">MES PROJETS</a>
+                            <a href="#contact">ME CONTACTER</a>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="presentation">
+
+            <video autoplay muted loop id="myVideo">
+                <source src="Vidéo/3163534-uhd_3840_2160_30fps.mp4" type="video/mp4">
+            </video>
+
+            <div class="group_intro">
+                <div class="titre_intro">
+                    <h2>Mon <br> introduction</h2>
+                </div>
+                <div class="intro">
+                    <p>Passionné d'informatique je souhaiterai accroitre mes connaissances <br> en réalisant un BTS Services Informatiques aux Organisations, <br> puis réaliser un Master en Cybersécurité</p>
+                </div>
+            </div>
+            <div class="group_formation">
+                <div class="tite_formation">
+                    <h2>Mes Formations</h2>
+                </div>
+                <div class="mes_formation">
+                    <div class="bloc_1">
+                        <div class="formation" id="maestris">
+                            <h3>BTS SIO - Maestris (Octobre 2023)</h3>
+                            <p>Option SLAM <br> Apprentissage de différents languages de programmation <br> Conception d'application et site Web</p>
+                        </div>
+                        <div class="formation" id="CEH">
+                            <h3>CEH - AKAOMA (2022)</h3>
+                            <p>Certification Hacker Ethique <br> Environnement Linux <br> Test d'intrusion (Pentest)</p>
+                        </div>
+                        <div class="formation" id="recoveo">
+                            <h3>Formation récupération de données - Recoveo (2021)</h3>
+                            <p>Apprentissage logiciel Puma cloner</p>
+                        </div>
+                    </div>
+                    <div class="bloc_2">
+                        <div class="formation" id="BAC">
+                            <h3>BAC Pro Maintenance Nautique (2014)</h3>
+                            <p>Résine polyester, époxy <br> Mécanique</p>
+                        </div>
+                        <div class="formation" id="secour">
+                            <h3>PSE1, PSE2, BNSSA (Secourisme)</h3>
+                            <p>Secour à personne en équipe <br> Secour à personne en Mer</p>
+                        </div>
+                    </div>  
+                </div>           
+            </div>
+            <div class="group_compétence">
+                <div class="left">
+                    <div class="titre_competence">
+                        <h2>Mes Compétences</h2>
+                    </div>
+                    <div class="competence" onclick="showCompetenceDetails('hardware')">
+                        <h3>Hardware</h3>
+                        <p>Description brève.</p>
+                    </div>
+                    <div class="competence" onclick="showCompetenceDetails('vm')">
+                        <h3>VM avec VirtualBox</h3>
+                        <p>Description brève.</p>
+                    </div>
+                    <div class="competence" onclick="showCompetenceDetails('os')">
+                        <h3>Systèmes d'exploitation</h3>
+                        <p>Description brève.</p>
+                    </div>
+                    <div class="competence" onclick="showCompetenceDetails('software')">
+                        <h3>Logiciels divers</h3>
+                        <p>Description brève.</p>
+                    </div>
+                    <div class="competence" onclick="showCompetenceDetails('office')">
+                        <h3>Pack Office</h3>
+                        <p>Description brève.</p>
+                    </div>
+                </div>
+                <div class="right" id="competence-details">
+                    <h3>Sélectionnez une compétence</h3>
+                    <p>Les détails apparaîtront ici.</p>
+                    <img id="competence-image" src="" alt="Image compétence" style="display: none; width: 100%; border-radius: 10px; margin-top: 20px;">
+                </div>
+            </div>
+
+            <div class="cv-container"> 
+                <section class="card-section">
+                    <h2>Expériences Professionnelles</h2>
+                    <div class="card-container">
+                        <div class="card">
+                            <h3>Moritz informatique</h3>
+                            <p><strong>Période :</strong> Depuis 2020</p>
+                        </div>
+                        <div class="card">
+                            <h3>Proman intérim</h3>
+                            <p><strong>Période :</strong> 2022</p>
+                        </div>
+                        <div class="card">
+                            <h3>HULL CNE</h3>
+                            <p><strong>Période :</strong> 2020/2021</p>
+                            <p>Accastillage, stratification et création de pièces de bateau.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Nageur Sauveteur</h3>
+                            <p><strong>Périodes :</strong></p>
+                            <ul>
+                                <li>Ville de Six Fours les plages (4 ans)</li>
+                                <li>Sapeurs Pompiers à la Seyne sur mer (1 an)</li>
+                                <li>Camping RATP (1 an)</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Installation matériel informatique</h3>
+                            <p>Installation d'unités centrales, écrans et imprimantes dans les lycées de la région PACA.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <script src="Script.js"></script>    
+    </body>
+</html>
