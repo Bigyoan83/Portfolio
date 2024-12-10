@@ -27,6 +27,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .bloc_1, .bloc_2 {
@@ -40,9 +41,8 @@ img {
 .formation {
     position: relative;
     background-color: rgb(128, 128, 128);
-    width: 500px;
-    height: 300px;
-    padding: 80px;
+    width: 300px;
+    padding: 20px; /* Ajuste l’espace intérieur */
     margin: 10px;
     border-radius: 15px;
     text-align: center;
@@ -50,6 +50,13 @@ img {
     cursor: pointer;
     z-index: 1; /* Met le texte au-dessus */
     overflow: hidden; /* Assure que l'image de fond ne déborde pas */
+    box-sizing: border-box; /* Inclut padding dans width/height */
+}
+
+.formation p {
+    margin: 10px 0; /* Ajuste les marges des paragraphes */
+    font-size: 1rem; /* Assure une taille adaptée */
+    line-height: 1.5; /* Améliore la lisibilité */
 }
 
 .formation::before {
@@ -68,9 +75,6 @@ img {
     z-index: -1; /* Place l'image derrière le contenu */
 }
 
-.formation h3 {
-    padding: 45px;
-}
 
 #maestris::before {
     background-image: url("../Image/maestris.png");
@@ -97,7 +101,7 @@ img {
 
 @media (max-width: 768px) {
     .formation {
-        width: 100%;
+        width: 70%;
     }
 
     .tite_formation {
