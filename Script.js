@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             office: {
                 title: "Pack Office",
-                description: "Word, Excel, PowerPoint, etc.",
+                description: "Word, Excel, PowerPoint",
             },
         };
 
