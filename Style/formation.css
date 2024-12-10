@@ -33,12 +33,12 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap; /* Adapte la disposition sur petits écrans */
+    flex-wrap: wrap;
     margin: 20px;
 }
 
 .formation {
-    position: relative; /* Nécessaire pour que ::before soit positionné par rapport à l'élément */
+    position: relative;
     background-color: rgb(128, 128, 128);
     width: 500px;
     height: 300px;
