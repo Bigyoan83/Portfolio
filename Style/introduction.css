@@ -18,7 +18,14 @@
     flex-direction: column;
     justify-content: center;
     color: #f1f1f1;
-    padding-left: 15%;
+}
+
+.titre_intro {
+    margin-left: 15%;
+}
+
+.group_intro p, h2 {
+    margin-bottom: 40px;
 }
 
 .overlay {
@@ -33,4 +40,5 @@
 
 .intro {
     font-size: 30px;
+    margin-left: 15%;
 }

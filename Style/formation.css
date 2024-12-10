@@ -20,28 +20,26 @@ img {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
-
+    
 }
 
 .mes_formation {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
+    flex-direction: column;
+    gap: 20px;
 }
 
 .bloc_1, .bloc_2 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 20px;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
 }
 
 .formation {
     position: relative;
     background-color: rgb(128, 128, 128);
-    width: 300px;
+    width: 400px;
     padding: 20px; /* Ajuste l’espace intérieur */
     margin: 10px;
     border-radius: 15px;
@@ -51,6 +49,11 @@ img {
     z-index: 1; /* Met le texte au-dessus */
     overflow: hidden; /* Assure que l'image de fond ne déborde pas */
     box-sizing: border-box; /* Inclut padding dans width/height */
+}
+
+.formation h3 {
+    font-size: 1.3rem;
+    padding: 20px;
 }
 
 .formation p {
@@ -78,25 +81,31 @@ img {
 
 #maestris::before {
     background-image: url("../Image/maestris.png");
-    background-size: 400px 400px; 
+    background-size: 250px 250px; 
+
+}
+
+#CEH::before {
+    background-image: url("../Image/CEH.png");
+    background-size: 250px 150px; 
 
 }
 
 #recoveo::before {
     background-image: url("../Image/recoveo.png");
-    background-size: 350px 350px; 
+    background-size: 200px 200px; 
 
 }
 
 #BAC::before {
     background-image: url("../Image/BAC.png");
-    background-size: 400px 400px;
+    background-size: 250px 250px;
 
 }
 
 #secour::before {
     background-image: url("../Image/secour.png");
-    background-size: 300px 300px;
+    background-size: 150px 150px;
 }
 
 @media (max-width: 768px) {
@@ -109,7 +118,7 @@ img {
     }
 
     .formation h3 {
-        font-size: 1.2rem;
+        font-size: 0.1rem;
     }
 }
 
@@ -123,6 +132,6 @@ img {
     }
 
     .formation h3 {
-        font-size: 1rem;
+        font-size: 0.1rem;
     }
 }

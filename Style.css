@@ -48,7 +48,7 @@ body {
     padding: 10px 0;
     text-align: center;
     transition: top 0.6s;
-    z-index: 5; /* Moins que .header_bar pour rester dessous */
+    z-index: 10; /* Moins que .header_bar pour rester dessous */
 }
 
 
