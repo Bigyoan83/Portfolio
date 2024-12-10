@@ -26,19 +26,19 @@ document.addEventListener("DOMContentLoaded", function () {
         const competences = {
             hardware: {
                 title: "Hardware",
-                description: "Description détaillée sur le hardware.",
+                description: "Conception de PC Gamer sur mesure <br> Installation de périphérique externe ",
             },
             vm: {
                 title: "VM avec VirtualBox",
-                description: "Description détaillée sur les machines virtuelles.",
+                description: "Installation de machine virtuel <br> (Kali Linux, Windows, Windows Server)",
             },
             os: {
                 title: "Systèmes d'exploitation",
-                description: "Windows, Kali Linux, etc.",
+                description: "Windows, Kali Linux",
             },
             software: {
                 title: "Logiciels divers",
-                description: "Wireshark, Nmap, Hexascan, etc.",
+                description: "Wireshark, Nmap, Hexascan, Sharpoint",
             },
             office: {
                 title: "Pack Office",
