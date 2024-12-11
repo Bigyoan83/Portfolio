@@ -13,17 +13,27 @@
 }
 
 .titre_projet {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f1f1f1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
+    margin-bottom: 40px;
     text-align: center;
 }
 
 .SIAO, .CSI {
-    background-color: #ffffff; 
+    background-color: rgba(0, 0, 0, 0.7); 
     border-radius: 10px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     width: 10%;
     padding: 20px;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s; 
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: aliceblue;
+}
+
+.SIAO h2, .CSI h2 {
+    color: #6120e4;
 }
 
 .SIAO:hover, .CSI:hover {

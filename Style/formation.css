@@ -1,145 +1,119 @@
 .group_formation {
-    padding-top: 100px;
-    padding-bottom: 50px;
-    margin: 0;
-    background-image: url(Image/Fond-gris.jpg);
-    color: white;
-}
-
-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+    padding: 50px 0;
+    margin: 0 auto;
+    background-image: url(Image/Fond-gris.jpg); /* Image d'arrière-plan */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
 }
 
 .tite_formation {
-    text-align: center;
     font-size: 2rem;
-    margin-bottom: 20px;
-    
+    font-weight: bold;
+    color: #f1f1f1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 40px;
 }
 
 .mes_formation {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.bloc_1, .bloc_2 {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 20px; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 .formation {
     position: relative;
-    background-color: rgb(128, 128, 128);
-    width: 400px;
-    padding: 20px; /* Ajuste l’espace intérieur */
+    width: 350px;
+    padding: 20px;
     margin: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
-    text-align: center;
-    font-size: x-large;
-    cursor: pointer;
-    z-index: 1; /* Met le texte au-dessus */
-    overflow: hidden; /* Assure que l'image de fond ne déborde pas */
-    box-sizing: border-box; /* Inclut padding dans width/height */
+    text-align: left;
+    color: #f1f1f1;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.formation:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5);
 }
 
 .formation h3 {
-    font-size: 1.3rem;
-    padding: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #6120e4;
 }
 
 .formation p {
-    margin: 10px 0; /* Ajuste les marges des paragraphes */
-    font-size: 1rem; /* Assure une taille adaptée */
-    line-height: 1.5; /* Améliore la lisibilité */
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
 }
 
 .formation::before {
-    content: ""; /* Nécessaire pour ::before */
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../Image/CEH.png");
-    background-size: 400px 200px;
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
-    opacity: 30%;
-    border-radius: 15px; 
-    z-index: -1; /* Place l'image derrière le contenu */
+    opacity: 0.2;
+    border-radius: 15px;
+    z-index: -1;
 }
-
 
 #maestris::before {
     background-image: url("../Image/maestris.png");
-    background-size: 250px 250px; 
-<<<<<<< Updated upstream
-
 }
 
 #CEH::before {
     background-image: url("../Image/CEH.png");
-    background-size: 250px 150px; 
-=======
->>>>>>> Stashed changes
-
 }
-
 
 #recoveo::before {
     background-image: url("../Image/recoveo.png");
-    background-size: 200px 200px; 
-
 }
 
 #BAC::before {
     background-image: url("../Image/BAC.png");
-<<<<<<< Updated upstream
-    background-size: 250px 250px;
-=======
-    background-size: 300px 300px;
->>>>>>> Stashed changes
-
 }
 
 #secour::before {
     background-image: url("../Image/secour.png");
-    background-size: 150px 150px;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
+    .mes_formation {
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .formation {
-        width: 70%;
+        width: 90%;
+        margin: auto;
     }
 
     .tite_formation {
-        font-size: 1.8rem;
-    }
-
-    .formation h3 {
-        font-size: 0.1rem;
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 480px) {
-    .tite_formation {
-        font-size: 1.5rem;
-    }
-
     .formation {
         padding: 15px;
     }
 
     .formation h3 {
-        font-size: 0.1rem;
+        font-size: 1.2rem;
+    }
+
+    .formation p {
+        font-size: 0.9rem;
     }
 }

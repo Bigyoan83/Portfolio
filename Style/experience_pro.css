@@ -15,6 +15,15 @@
     color: #666;
 }
 
+.titre_experience {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f1f1f1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
 /* Sections de cartes */
 .card-section {
     margin-bottom: 40px;
@@ -35,11 +44,12 @@
 
 /* Carte individuelle */
 .card {
-    background: #fff;
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
     box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1);
     padding: 20px;
     transition: transform 1s ease, box-shadow 1s ease;
+    color: aliceblue;
 }
 
 .card:hover {
@@ -49,7 +59,7 @@
 
 .card h3 {
     margin-bottom: 10px;
-    color: #0078D7;
+    color: #6120e4;
 }
 
 .card ul {
