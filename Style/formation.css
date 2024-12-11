@@ -82,14 +82,18 @@ img {
 #maestris::before {
     background-image: url("../Image/maestris.png");
     background-size: 250px 250px; 
+<<<<<<< Updated upstream
 
 }
 
 #CEH::before {
     background-image: url("../Image/CEH.png");
     background-size: 250px 150px; 
+=======
+>>>>>>> Stashed changes
 
 }
+
 
 #recoveo::before {
     background-image: url("../Image/recoveo.png");
@@ -99,7 +103,11 @@ img {
 
 #BAC::before {
     background-image: url("../Image/BAC.png");
+<<<<<<< Updated upstream
     background-size: 250px 250px;
+=======
+    background-size: 300px 300px;
+>>>>>>> Stashed changes
 
 }
 
