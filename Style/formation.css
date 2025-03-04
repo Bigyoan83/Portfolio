@@ -1,7 +1,7 @@
 .group_formation {
     padding: 50px 0;
     margin: 0 auto;
-    background-image: url(Image/Fond-gris.jpg); /* Image d'arrière-plan */
+    background-image: url(Image/Fond-gris.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
