@@ -23,12 +23,12 @@ body {
 
 .header_bar {
     width: 100%;
-    background-color: #333; /* Couleur de fond pour éviter tout chevauchement */
+    background-color: #333;
     text-align: center;
-    padding: 15px 0; /* Ajustez le padding selon l'espacement souhaité */
+    padding: 15px 0; 
     position: fixed;
     top: 0;
-    z-index: 10; /* Assure que le nom est au-dessus de la nav_barre */
+    z-index: 10;
 }
 
 /*---------------------BARRE DE NAVIGATION---------------------*/
@@ -43,12 +43,12 @@ body {
 
 .nav_barre {
     position: fixed;
-    top: 100px; /* Décalage en dessous du nom ; ajustez selon la hauteur de `.header_bar` */
+    top: 100px; 
     width: 100%;
     padding: 10px 0;
     text-align: center;
     transition: top 0.6s;
-    z-index: 10; /* Moins que .header_bar pour rester dessous */
+    z-index: 10;
 }
 
 
