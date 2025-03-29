@@ -1,62 +1,268 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: GothamSS, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background-color: #393939;
-}
-
-.hearder_portfolio {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #f1f1f1;
+    background-color: #999;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: #f1f1f1;
+    text-decoration: none;
+  }
+  
+  .section {
+    background-color: #000;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 150px auto;
+    padding: 60px;
+  }
+  
+  /* Pleine largeur sous 1440px */
+  @media screen and (max-width: 1439px) {
+    .section {
+      max-width: 100%;
+      margin: 100px 40px;
+      border-radius: 20px;
+    }
+  }
+  
+  .nav-column {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-}
-
-.return_header {
-    text-decoration: none;
+    height: 100vh;
+    width: 180px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(12px);
+    border-right: 1px solid rgba(255,255,255,0.05);
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .nav-column .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
     color: #f1f1f1;
-    font-weight:bolder;
-}
-
-.header_bar {
-    width: 100%;
-    background-color: #333;
-    text-align: center;
-    padding: 15px 0; 
-    position: fixed;
-    top: 0;
-    z-index: 10;
-}
-
-/*---------------------BARRE DE NAVIGATION---------------------*/
-
-.my_name {
-    font-size: xx-large;
-    text-decoration: none;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .nav-column .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .nav-column .nav-links a {
     color: #f1f1f1;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.nav_barre {
-    position: fixed;
-    top: 100px; 
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-    transition: top 0.6s;
-    z-index: 10;
-}
-
-
-.nav_barre a {
-    margin-right: 25px;
     text-decoration: none;
-    color: #f1f1f1;
-    font-size: 20px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  
+  .nav-column .nav-links a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Décale le contenu principal à droite */
+
+  .row_hmxdllc0n {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    color: #fff;
+    gap: 40px;
+    min-height: 500px;
+
+  }
+  
+  .column-1,.column-3 {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .column-2 {
+    width: 2px;
+    background-color: #555;
+    height: 100%;
+    align-self: stretch;
+    min-height: 500px; 
+  }
+  
+  
+  .profile-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 325px;
+    height: 474px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .profile-box h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  
+  
+  .praxis-link, .nasa-link {
+    color: #fff;
+    text-decoration: underline;
     font-weight: 500;
-}
+    letter-spacing: 0.5px;
+  }
+  
+  .font_pwklpjrm {
+    font-weight: 700;
+    color: #ffcc00;
+  }
+  
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
 
+  
+  .hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('chemin/vers/votre/image.jpg') no-repeat center center/cover;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  
+  .section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .card {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 60px 20px;
+    background: #000;
+  }
+  
+  .footer a {
+    color: #999;
+    display: block;
+    margin-top: 8px;
+  }
+  
+  .socials a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #f1f1f1;
+  }
+  
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f1f1f1;
+  }
+  
+  /* Grille fluide */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .grid-item {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+  }
+  
+  .grid-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  }
+  
+  .grid-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #d4bfff;
+  }
+  
+  .grid-item p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
