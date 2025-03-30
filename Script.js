@@ -61,6 +61,7 @@ window.addEventListener('scroll', () => {
     }
 
     setInterval(nextSlide, 3000);
+    
 
   
   

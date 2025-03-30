@@ -6,10 +6,10 @@
 }
 
 body {
-  font-family: 'Space Grotesk', sans-serif;
   color: #f1f1f1;
   background-color: #999;
   line-height: 1.6;
+  font-family: "MaisonNeue-Bold", sans-serif;
 }
 
 a {
@@ -122,12 +122,6 @@ a {
   box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
 
-.grid-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #d4bfff;
-}
-
 .grid-item p {
   font-size: 1rem;
   color: #ccc;
@@ -137,6 +131,10 @@ a {
 .section-title-fade-in {
   text-align: center;
   font-size: 100px;
+}
+
+.section-title-fade-in h1 {
+  padding-top: 100px;
 }
 
 /* ========== ANIMATION AU SCROLL ========== */
@@ -156,7 +154,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 40px;
+  padding: 200px 40px;
   color: #fff;
   gap: 40px;
   min-height: 500px;
@@ -257,6 +255,7 @@ a {
   color: #ccc;
 }
 
+
 /* ========== CAROUSEL D'IMAGES ========== */
 .carousel {
   max-width: 1000px;
@@ -286,6 +285,9 @@ a {
   object-fit: contain;
   display: block;
 }
+
+/* ========== CAROUSEL SCOOL ========== */
+
 
 /* ========== FOOTER ========== */
 .footer {
