@@ -7,7 +7,7 @@
 
 body {
   color: #f1f1f1;
-  background-color: #999;
+  background-color: #333333;
   line-height: 1.6;
   font-family: "MaisonNeue-Bold", sans-serif;
 }
@@ -19,7 +19,7 @@ a {
 
 /* ========== SECTION GÉNÉRALE ========== */
 .section {
-  background-color: #000;
+  background: linear-gradient(black, grey);
   border-radius: 30px;
   width: 100%;
   max-width: 1600px;
@@ -293,7 +293,7 @@ a {
 .footer {
   text-align: center;
   padding: 60px 20px;
-  background: #000;
+  background-color: black;
 }
 
 .footer a {
@@ -314,10 +314,6 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 60px 0;
-}
-
-.section_1 {
-  background-color: #1e1e1e;
 }
 
 .title_pro {
