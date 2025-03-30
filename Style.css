@@ -1,268 +1,323 @@
+/* ========== RESET & GLOBAL ========== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Space Grotesk', sans-serif;
-    color: #f1f1f1;
-    background-color: #999;
-    line-height: 1.6;
-  }
-  
-  a {
-    color: #f1f1f1;
-    text-decoration: none;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #f1f1f1;
+  background-color: #999;
+  line-height: 1.6;
+}
+
+a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+/* ========== SECTION GÉNÉRALE ========== */
+.section {
+  background-color: #000;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 150px auto;
+}
+
+@media screen and (max-width: 1439px) {
   .section {
-    background-color: #000;
-    border-radius: 30px;
-    width: 100%;
-    max-width: 1600px;
-    margin: 150px auto;
-    padding: 60px;
+    max-width: 100%;
+    margin: 100px 40px;
+    border-radius: 20px;
   }
-  
-  /* Pleine largeur sous 1440px */
-  @media screen and (max-width: 1439px) {
-    .section {
-      max-width: 100%;
-      margin: 100px 40px;
-      border-radius: 20px;
-    }
-  }
-  
-  .nav-column {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 180px;
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(12px);
-    border-right: 1px solid rgba(255,255,255,0.05);
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 999;
-  }
-  
-  .nav-column .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #f1f1f1;
-    margin-bottom: 60px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
-  .nav-column .nav-links {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  
-  .nav-column .nav-links a {
-    color: #f1f1f1;
-    text-decoration: none;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: color 0.3s;
-  }
-  
-  .nav-column .nav-links a:hover {
-    color: #ffcc00;
-  }
-  
-  /* Décale le contenu principal à droite */
+}
 
-  .row_hmxdllc0n {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 40px;
-    color: #fff;
-    gap: 40px;
-    min-height: 500px;
+/* ========== NAVIGATION LATÉRALE ========== */
+.nav-column {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 180px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(12px);
+  border-right: 1px solid rgba(255,255,255,0.05);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+}
 
-  }
-  
-  .column-1,.column-3 {
-    flex: 1;
-    min-width: 0;
-  }
-  
-  .column-2 {
-    width: 2px;
-    background-color: #555;
-    height: 100%;
-    align-self: stretch;
-    min-height: 500px; 
-  }
-  
-  
-  .profile-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .profile-pic {
-    width: 325px;
-    height: 474px;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
-  
-  .profile-box h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #fff;
-  }
-  
-  
-  .praxis-link, .nasa-link {
-    color: #fff;
-    text-decoration: underline;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-  }
-  
-  .font_pwklpjrm {
-    font-weight: 700;
-    color: #ffcc00;
-  }
-  
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
+.nav-column .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f1f1f1;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
-  
-  .hero-section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: url('chemin/vers/votre/image.jpg') no-repeat center center/cover;
-  }
-  
-  .hero-content h1 {
-    font-size: 4rem;
-    font-weight: 600;
-  }
+.nav-column .nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
-  
-  .section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-  }
-  
-  .card {
-    background: #1a1a1a;
-    padding: 30px;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-  }
-  
-  .footer {
-    text-align: center;
-    padding: 60px 20px;
-    background: #000;
-  }
-  
-  .footer a {
-    color: #999;
-    display: block;
-    margin-top: 8px;
-  }
-  
-  .socials a {
-    display: inline-block;
-    margin: 0 10px;
-    color: #f1f1f1;
-  }
-  
+.nav-column .nav-links a {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
 
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 0;
-  }
-  
-  .section-title {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #f1f1f1;
-  }
-  
-  /* Grille fluide */
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-  }
-  
-  .grid-item {
-    background-color: #1a1a1a;
-    padding: 30px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #fff;
-  }
-  
-  .grid-item:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-  }
-  
-  .grid-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #d4bfff;
-  }
-  
-  .grid-item p {
-    font-size: 1rem;
-    color: #ccc;
-  }
+.nav-column .nav-links a:hover {
+  color: #ffcc00;
+}
 
+/* ========== SECTION HERO INTRO ========== */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
-  .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-  }
-  
-  .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+/* ========== TEXTE DE SECTION & TITRES ========== */
+.section h2,
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #f1f1f1;
+}
+
+/* ========== GRILLE RESPONSIVE ========== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.grid-item {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+}
+
+.grid-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.grid-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #d4bfff;
+}
+
+.grid-item p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* ========== SECTIONS SPÉCIALES ========== */
+.section-title-fade-in {
+  text-align: center;
+  font-size: 100px;
+}
+
+/* ========== ANIMATION AU SCROLL ========== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== SECTION PRÉSENTATION (3 COLONNES) ========== */
+.row_hmxdllc0n {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  color: #fff;
+  gap: 40px;
+  min-height: 500px;
+}
+
+.column-1, .column-3 {
+  flex: 1;
+  min-width: 0;
+  padding-left: 40px ;
+}
+
+.column-2 {
+  width: 2px;
+  background-color: #555;
+  height: 100%;
+  align-self: stretch;
+  min-height: 500px;
+}
+
+/* ========== PROFIL (NOM + IMAGE) ========== */
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 325px;
+  height: 474px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.profile-box h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/* ========== LIENS SPÉCIAUX DANS PRÉSENTATION ========== */
+.praxis-link,
+.nasa-link {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.font_pwklpjrm {
+  font-weight: 700;
+  color: #ffcc00;
+}
+
+/* ========== CARDS LIBRES ========== */
+.card {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+/* ========== SECTION PROJETS EN FLEX ========== */
+.section-pro-fade-in {
+  display: flex;
+  margin-left: 120px;
+  gap: 30px;
+  max-width: 1200px;
+}
+
+.section-pro-fade-in .grid-item {
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-pro-fade-in .grid-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.section-pro-fade-in h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.section-pro-fade-in p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* ========== CAROUSEL D'IMAGES ========== */
+.carousel {
+  max-width: 1000px;
+  height: 500px;
+  margin-left: 150px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  height: 100%;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  text-align: center;
+  padding: 60px 20px;
+  background: #000;
+}
+
+.footer a {
+  color: #999;
+  display: block;
+  margin-top: 8px;
+}
+
+.socials a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #f1f1f1;
+}
+
+/* ========== CONTAINER ========== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.section_1 {
+  background-color: #1e1e1e;
+}
+
+.title_pro {
+  padding-top: 100px;
+}
