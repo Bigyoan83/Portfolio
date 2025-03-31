@@ -12,13 +12,22 @@ body {
   font-family: "MaisonNeue-Bold", sans-serif;
 }
 
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #f1f1f1;
+}
+
 a {
   color: #f1f1f1;
   text-decoration: none;
 }
 
 /* ========== SECTION GÉNÉRALE ========== */
-.section {
+.section_principal {
   background: linear-gradient(black, grey);
   border-radius: 30px;
   width: 100%;
@@ -35,6 +44,7 @@ a {
 }
 
 /* ========== NAVIGATION LATÉRALE ========== */
+
 .nav-column {
   position: fixed;
   top: 0;
@@ -78,6 +88,7 @@ a {
 }
 
 /* ========== SECTION HERO INTRO ========== */
+
 .hero-section {
   height: 100vh;
   display: flex;
@@ -91,16 +102,29 @@ a {
   font-weight: 600;
 }
 
-/* ========== TEXTE DE SECTION & TITRES ========== */
-.section h2,
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #f1f1f1;
+#presentation_1, #presentation_2 {
+  font-size: 40px;
+  color: rgb(95, 95, 95);
 }
+
+#titre {
+  font-size: 120px;
+  font-family: "MaisonNeue-Bold", sans-serif;
+}
+
+#sous_titre {
+  font-size: 100px;
+  font-family: "MaisonNeue-Book", sans-serif;
+  font-weight: 400;
+}
+
+#nom {
+  font-family: 'BeautifullyDeliciousScript', cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 50px;
+  }
 
 /* ========== GRILLE RESPONSIVE ========== */
 .grid {
@@ -128,29 +152,14 @@ a {
 }
 
 /* ========== SECTIONS SPÉCIALES ========== */
-.section-title-fade-in {
+
+.section_titre {
   text-align: center;
   font-size: 100px;
 }
 
-.section-title-fade-in h1 {
-  padding-top: 100px;
-}
-
-/* ========== ANIMATION AU SCROLL ========== */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* ========== SECTION PRÉSENTATION (3 COLONNES) ========== */
-.row_hmxdllc0n {
+.section_presentation {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,14 +233,24 @@ a {
 }
 
 /* ========== SECTION PROJETS EN FLEX ========== */
-.section-pro-fade-in {
+.section_pro {
   display: flex;
+  flex-direction: column;
   margin-left: 120px;
   gap: 30px;
   max-width: 1200px;
 }
 
-.section-pro-fade-in .grid-item {
+.title_pro h2 {
+  text-align: center;
+}
+
+.section_projet_pro {
+  display: flex;
+}
+
+.grid-item {
+  margin: 30px;
   padding: 30px;
   border-radius: 12px;
   width: 100%;
@@ -239,18 +258,18 @@ a {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.section-pro-fade-in .grid-item:hover {
+.section_projet_pro .grid-item:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
 
-.section-pro-fade-in h3 {
+.section_projet_pro h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #ffcc00;
 }
 
-.section-pro-fade-in p {
+.section_projet_pro p {
   font-size: 1rem;
   color: #ccc;
 }
@@ -309,7 +328,7 @@ a {
 }
 
 /* ========== CONTAINER ========== */
-.container {
+.section_mes_projet, .competences {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;

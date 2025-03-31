@@ -6,11 +6,15 @@
     <title>Portfolio - Votre Nom</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="back">
-        <div class="section">
+    <div class="arriere_plan">
+        <div class="section_principal">
+
             <!-- SIDEBAR NAVIGATION -->
             <aside class="nav-column">
                 <div class="logo">MY</div>
@@ -20,26 +24,29 @@
                     <a href="#contact">Contact</a>
                 </nav>
             </aside>
+
+            <!-- TITRE -->
             
-            <section class="section-title-fade-in">
-                <h1>Mon Portfolio <br> test de contenu <h1>
+            <section class="section_titre">
+                <h1 id="titre">MON PORTFOLIO<h1>
+                <h1 id="sous_titre">TEST DESCRIPTION</h1>
+                <h1 id="nom">MORITZ YOAN</h1>
             </section>
 
-            <!-- INTRO HERO -->
-            <section class="row_hmxdllc0n fade-in">
+            <!-- PRESENTATION -->
+
+            <section class="section_presentation">
                 <div class="column-1">
-                    <p>
+                    <p id="presentation_1">
                         Passionné d'informatique depuis des années, j'ai décidé d'en faire mon métier. 
                         <span class="font_pwklpjrm">HOVS</span>
                     </p>
-                    <p>
+                    <p id="presentation_2">
                         <br>Motivé dans le travail et curieux dans tous les domaines, je souhaiterais acquérir de nouvelles compétences.                    
                         <span class="font_pwklpjrm">NASA/JPL</span>
                     </p>
                 </div>
-                <div class="column-2">
-                    
-                </div>
+                <div class="column-2"></div>
                 <div class="column-3">
                     <div class="profile-box">
                         <img src="/Image/HOVS-Portrait.webp" alt="Photo de Moritz Yoan" class="profile-pic" />
@@ -48,20 +55,23 @@
                 </div>
             </section>
 
-            <section class="section_1 fade-in">
+            <!-- EXPERIENCE PRO -->
+
+            <section class="section_pro">
+
                 <div class="title_pro">
                     <h2>Projet Professionnel</h2>
                 </div>
                 
-                <section class="carousel fade-in">
+                <section class="carousel">
                     <div class="carousel-wrapper">
                       <div class="carousel-slide"><img src="/Image/logo_SIAO.png" alt="Projet 1"></div>
                       <div class="carousel-slide"><img src="/Image/CSI.png" alt="Projet 2"></div>
                     </div>
-                  </section>
+                </section>
                   
 
-                <section class="section-pro-fade-in">
+                <section class="section_projet_pro">
                     <div class="grid-item">
                       <h3>Site internet SIAO</h3>
                       <p>Création d'un site responsive pour le SIAO 115 VAR, facilitant l'accès aux informations d'hébergement et aux ressources sociales.
@@ -71,10 +81,17 @@
                       <h3>Application</h3>
                       <p>Réalisation d'une application web full-stack dans le cadre d'un projet personnel, avec une interface moderne en React et une API backend en Node.js.</p>
                     </div>
-                  </section>
+                </section>
 
-                <div class="container">
+            </section>
+
+            <!-- SCOOL -->
+
+            <section class="section_scool">
+
+                <div class="section_mes_projet">
                     <h2 class="section-title">Mes Projets</h2>
+
                     <div class="grid">
                         <div class="grid-item"><h3>Space Invader</h3><p>Jeu en JS</p></div>
                         <div class="grid-item"><h3>Tic Tac Toe</h3><p>HTML, CSS, JS</p></div>
@@ -95,9 +112,10 @@
                 </div>
             </section>
             
-            
-            <section class="section fade-in">
-                <div class="container">
+            <!-- MES COMPETENCES -->
+
+            <section class="section_competence">
+                <div class="competences">
                     <h2 class="section-title">Mes Compétences</h2>
                     <div class="grid">
                         <div class="grid-item">
