@@ -132,12 +132,10 @@ a {
 }
 
 #nom {
-  font-family: 'BeautifullyDeliciousScript', cursive;
     font-optical-sizing: auto;
     font-weight: weight;
-    font-style: normal;
     font-size: 50px;
-  }
+}
 
 /* ========== GRILLE RESPONSIVE ========== */
 .grid {
