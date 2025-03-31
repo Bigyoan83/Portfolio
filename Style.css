@@ -27,6 +27,7 @@ a {
 }
 
 /* ========== SECTION GÉNÉRALE ========== */
+
 .section_principal {
   background: linear-gradient(black, grey);
   border-radius: 30px;
@@ -41,6 +42,18 @@ a {
     margin: 100px 40px;
     border-radius: 20px;
   }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  
+}
+
+.logo img {
+  width : 400px;
+  height : 400px;
 }
 
 /* ========== NAVIGATION LATÉRALE ========== */
