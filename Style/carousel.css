@@ -1,0 +1,65 @@
+.carousel-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: -50px;
+  }
+  
+  .carousel_projet {
+    position: relative;
+    height: 500px;
+    margin-bottom: -100px;
+  }
+  
+  
+  .carousel-item {
+    flex: 1 0 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  input#slide1:checked ~ .carousel-container label[for="slide1"],
+  input#slide2:checked ~ .carousel-container label[for="slide2"] {
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .carousel-form input[type="radio"] {
+    display: none;
+  }
+  
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: absolute;
+    top: 15px;
+    width: 50%;
+    z-index: 3;
+  }
+  
+  .carousel-indicators .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #bbb;
+    cursor: pointer;
+  }
+  
+  input#slide1:checked ~ .carousel-indicators label[for="slide1"],
+  input#slide2:checked ~ .carousel-indicators label[for="slide2"] {
+    background: #ffcc00;
+  }
+  
+  .carousel-item img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+    margin-left: 50px;
+  }
