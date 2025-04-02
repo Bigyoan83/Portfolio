@@ -29,12 +29,11 @@ a {
 /* ========== SECTION GÉNÉRALE ========== */
 
 .section_principal {
-  background: linear-gradient(black, grey);
-  border-radius: 30px;
   width: 100%;
   max-width: 1600px;
   margin: 150px auto;
 }
+
 
 @media screen and (max-width: 1439px) {
   .section {
@@ -45,10 +44,12 @@ a {
 }
 
 .logo {
+  background-color: black;
   display: flex;
   justify-content: center;
   padding-top: 100px;
-  
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .logo img {
@@ -165,12 +166,14 @@ a {
 /* ========== SECTIONS SPÉCIALES ========== */
 
 .section_titre {
+  background-color: black;
   text-align: center;
   font-size: 100px;
 }
 
 /* ========== SECTION PRÉSENTATION (3 COLONNES) ========== */
 .section_presentation {
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -245,11 +248,11 @@ a {
 
 /* ========== SECTION PROJETS EN FLEX ========== */
 .section_pro {
+  background-color: #1e1e1e;
   display: flex;
   flex-direction: column;
-  margin-left: 120px;
   gap: 30px;
-  max-width: 1200px;
+  max-width: 100%;
 }
 
 .title_pro h2 {
@@ -259,10 +262,12 @@ a {
 .section_projet_pro {
   display: flex;
   margin-top: -80px; /* Réduit l'espace en dessous */
+  padding-left: 120px;
 }
 
 .section_image {
-  margin-top: -10px;  /* Rapproche l’image du bloc précédent */
+  margin-top: -10px;
+  padding-left: 120px;
 }
 
 .grid-item {
@@ -286,24 +291,17 @@ a {
 }
 
 .section_projet_pro p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #ccc;
 }
-
-
-/* ========== CAROUSEL D'IMAGES ========== */
-
-
-
-/* ========== CAROUSEL SCOOL ========== */
-
-
 
 /* ========== FOOTER ========== */
 .footer {
   text-align: center;
   padding: 60px 20px;
   background-color: black;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .footer a {
