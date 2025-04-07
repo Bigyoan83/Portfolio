@@ -257,6 +257,7 @@ a {
 
 .title_pro h2 {
   text-align: center;
+  margin-top: 50px;
 }
 
 .section_projet_pro {
@@ -293,6 +294,25 @@ a {
 .section_projet_pro p {
   font-size: 1.3rem;
   color: #ccc;
+}
+
+
+/* ========== SCOOL ========== */
+
+.section_scool {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.title_scool {
+  margin-top: 50px;
+}
+
+/* ========== COMPETENCES ========== */
+
+.section_competence {
+  background-color: #1e1e1e;
 }
 
 /* ========== FOOTER ========== */
