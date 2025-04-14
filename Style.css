@@ -123,12 +123,12 @@ a {
 
 #titre {
   font-size: 120px;
-  font-family: "MaisonNeue-Bold", sans-serif;
+  font-family: 'PPPlayground', sans-serif;
 }
 
 #sous_titre {
   font-size: 100px;
-  font-family: "MaisonNeue-Book", sans-serif;
+  font-family: 'PPPlayground', sans-serif;
   font-weight: 400;
 }
 
@@ -246,6 +246,14 @@ a {
   box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 }
 
+.icon-mini {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+
 /* ========== SECTION PROJETS EN FLEX ========== */
 .section_pro {
   background-color: #1e1e1e;
@@ -296,7 +304,6 @@ a {
   color: #ccc;
 }
 
-
 /* ========== SCOOL ========== */
 
 .section_scool {
@@ -305,27 +312,96 @@ a {
   background-color: black;
 }
 
+
+
 .title_scool {
   margin-top: 50px;
 }
 
-/* ========== COMPETENCES ========== */
-
-.section_competence {
-  background-color: #1e1e1e;
+.filledbar p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 0;
 }
 
+
+
+/* ========== COMPETENCES ========== */
+
+.section_bot {
+  background: linear-gradient(rgb(154, 154, 154), rgb(255, 255, 255));
+}
+
+.section-title {
+  color: #000000;
+}
+
+/* ========== VEILLE ========== */
+
+.veille {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.veilles {
+  display: flex;
+}
+
+.title_veille h2 {
+  color: #000000;
+}
+
+.mes_veilles {
+  background-color: black;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mes_veilles:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.mes_veilles a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f20404;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.mes_veilles a:hover {
+  text-decoration: underline;
+}
+
+.mes_veilles p {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+
 /* ========== FOOTER ========== */
+
 .footer {
   text-align: center;
-  padding: 60px 20px;
-  background-color: black;
+  padding: 50px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
 
 .footer a {
-  color: #999;
+  color: #000000;
   display: block;
   margin-top: 8px;
 }
@@ -333,7 +409,11 @@ a {
 .socials a {
   display: inline-block;
   margin: 0 10px;
-  color: #f1f1f1;
+  color: #000000;
+}
+
+footer h2, p {
+  color: #000000;
 }
 
 /* ========== CONTAINER ========== */
