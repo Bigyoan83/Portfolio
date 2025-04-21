@@ -74,7 +74,6 @@ window.addEventListener('scroll', () => {
 
   document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("section[id]");
-    const navLinks = document.querySelectorAll(".nav-links a");
   
     window.addEventListener("scroll", () => {
       let current = "";
@@ -97,15 +96,27 @@ window.addEventListener('scroll', () => {
 
 // Burger nav
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const burger = document.getElementById("burger-menu");
-    const navLinks = document.querySelector(".nav-links");
-  
-    burger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-      burger.classList.toggle("open");
-    });
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.getElementById("burger-menu");
+  const navMenu = document.getElementById("nav-menu");
+
+  burger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    burger.classList.toggle("open");
   });
+});
+
+window.addEventListener("scroll", () => {
+  const header = document.querySelector(".mobile-header");
+
+  if (window.scrollY > 10) {
+    header.style.zIndex = "9999"; // passe devant
+  } else {
+    header.style.zIndex = "10"; // reste derrière quand en haut
+  }
+});
+
+
   
   
   

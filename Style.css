@@ -7,6 +7,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -32,90 +34,41 @@ a {
 
 /* ========== SECTION GÉNÉRALE ========== */
 
-.section_principal {
-  width: 100%;
-  max-width: 1600px;
-  margin: 150px auto;
-}
-
-
-@media screen and (max-width: 1439px) {
-  .section {
-    max-width: 100%;
-    margin: 100px 40px;
-    border-radius: 20px;
-  }
+.all_section {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 .logo {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  position: relative;
+  z-index: 20;
+  margin-top: 100px;
+}
+
+.mobile-header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 10000;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .logo img {
   width : 400px;
   height : 400px;
-}
-
-/* ========== NAVIGATION LATÉRALE ========== */
-
-.nav-column {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(12px);
-  border-right: 1px solid rgba(255,255,255,0.05);
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 999;
-}
-
-.nav-column .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #f1f1f1;
-  margin-bottom: 60px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.nav-column .nav-links {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.nav-column .nav-links a {
-  font-size: 1rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: color 0.3s;
-}
-
-.nav-column .nav-links a:hover {
-  color: #ffcc00;
-}
-
-.burger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.burger span {
-  height: 3px;
-  width: 25px;
-  background: #fff;
-  border-radius: 2px;
-  transition: all 0.3s ease;
 }
 
 /* ========== SECTION HERO INTRO ========== */

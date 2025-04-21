@@ -2,7 +2,7 @@
     <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Logo Stylisé</title>
         <title>Portfolio MORITZ Yoan</title>
         <link rel="stylesheet" href="Style.css">
@@ -11,369 +11,367 @@
         <link rel="stylesheet" href="Style/mes_projet_ecole.css">
         <link rel="stylesheet" href="responsive.css">
 
-</head>
-<body>
-    <div class="arriere_plan">
-        <div class="section_principal">
-            
-            <!-- SIDEBAR NAVIGATION -->
-
-            <aside class="nav-column">
-                <div class="logo" id="logo">MY</div>
-
+    </head>
+    <body>
+        <div class="all_section">
+            <header class="main-header">
+                <div class="container">
+                <div class="mini_logo">MY</div>
+                <nav class="nav" id="nav-menu">
+                    <a href="#moi">Présentation</a>
+                    <a href="#projet_pro">Projet Pro</a>
+                    <a href="#projet_ecole">Projet École</a>
+                    <a href="#competence">Compétences</a>
+                    <a href="#veille">Veille</a>
+                    <a href="#contact">Contact</a>
+                </nav>
                 <div class="burger" id="burger-menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-
-                <nav class="nav-links">
-                    <a href="#moi">Présentation</a>
-                    <a href="#projet_pro">Projet Proffessionnel</a>
-                    <a href="#projet_ecole">Projet Ecole</a>
-                    <a href="#competence">Mes Compétences</a>
-                    <a href="#veille">Ma Veille</a>
-                    <a href="#contact">Me contacter</a>
-                </nav>
-            </aside>
-            
-            <section class="logo">
-                <img src="Image/Logo1.png">
-            </section>
-            
-            <!-- TITRE -->
-            
-            <section class="section_titre">
-                <h1 id="titre">PORTFOLIO<h1>
-                <h1 id="sous_titre">CREATION PAR</h1>
-                <h1 id="nom" style="font-family: 'PP Playground', sans-serif;">MORITZ YOAN</h1>
-            </section>
-
-            <!-- PRESENTATION -->
-            
-            <section id="moi" class="section_presentation">
-                <div class="column-1">
-                    <p id="presentation_1">
-                        Passionné d'informatique depuis des années, j'ai décidé d'en faire mon 
-                        <span class="font_pwklpjrm">METIER</span>
-                    </p>
-                    <p id="presentation_2">
-                        <br>Motivé dans le travail et curieux dans tous les domaines, je souhaiterais acquérir de nouvelles                    
-                        <span class="font_pwklpjrm">COMPETENCES</span>
-                    </p>
                 </div>
-                <div class="column-2"></div>
-                <div class="column-3">
-                    <div class="profile-box">
-                        <img src="Image/profil.png" alt="Photo de Moritz Yoan" class="profile-pic" />
-                    </div>
-                </div>
-            </section>
-            
-            <!-- EXPERIENCE PRO -->
-            
-            <section id="projet_pro" class="section_pro">
-                <div class="title_pro">
-                    <h2>Projet Professionnel</h2>
-                </div>
+            </header>
                 
-                <section class="carousel_projet">
-                    <form class="carousel-form">
-                        <input type="radio" name="carousel" id="slide1" checked>
-                        <input type="radio" name="carousel" id="slide2">
-                        <div class="carousel-container">
-                            <label for="slide1" class="carousel-item"><img src="Image/CSI.png" alt="CSI Atelier 1"></label>
-                            <label for="slide2" class="carousel-item"><img src="Image/logo_SIAO.png" alt="CSI Atelier 2"></label>
-                        </div>
-                        <div class="carousel-indicators">
-                            <label for="slide1" class="dot"></label>
-                            <label for="slide2" class="dot"></label>
-                        </div>
-                    </form>
+                <section class="logo">
+                    <img src="Image/Logo1.png">
                 </section>
                 
-                <section class="section_projet_pro">
-                    <div class="grid-item">
-                        <h3>Site internet SIAO</h3>
-                        <p>Création d'un site responsive pour le SIAO 115 VAR, facilitant l'accès aux informations d'hébergement et aux ressources sociales.
-                            Réalisé avec PHP, Laravel, HTML et CSS.</p>
+                <!-- TITRE -->
+                
+                <section class="section_titre">
+                    <h1 id="titre">PORTFOLIO<h1>
+                    <h1 id="sous_titre">CREATION PAR</h1>
+                    <h1 id="nom" style="font-family: 'PP Playground', sans-serif;">MORITZ YOAN</h1>
+                </section>
+    
+                <!-- PRESENTATION -->
+                
+                <section id="moi" class="section_presentation">
+                    <div class="column-1">
+                        <p id="presentation_1">
+                            Passionné d'informatique depuis des années, j'ai décidé d'en faire mon 
+                            <span class="font_pwklpjrm">METIER</span>
+                        </p>
+                        <p id="presentation_2">
+                            <br>Motivé dans le travail et curieux dans tous les domaines, je souhaiterais acquérir de nouvelles                    
+                            <span class="font_pwklpjrm">COMPETENCES</span>
+                        </p>
+                    </div>
+                    <div class="column-2"></div>
+                    <div class="column-3">
+                        <div class="profile-box">
+                            <img src="Image/profil.png" alt="Photo de Moritz Yoan" class="profile-pic" />
                         </div>
-                        <div class="grid-item">
-                            <h3>Application</h3>
-                            <p>Réalisation d'une application web full-stack dans le cadre d'un projet personnel, avec une interface moderne en React et une API backend en Node.js.</p>
-                        </div>
+                    </div>
+                </section>
+                
+                <!-- EXPERIENCE PRO -->
+                
+                <section id="projet_pro" class="section_pro">
+                    <div class="title_pro">
+                        <h2>Projet Professionnel</h2>
+                    </div>
+                    
+                    <section class="carousel_projet">
+                        <form class="carousel-form">
+                            <input type="radio" name="carousel" id="slide1" checked>
+                            <input type="radio" name="carousel" id="slide2">
+                            <div class="carousel-container">
+                                <label for="slide1" class="carousel-item"><img src="Image/CSI.png" alt="CSI Atelier 1"></label>
+                                <label for="slide2" class="carousel-item"><img src="Image/logo_SIAO.png" alt="CSI Atelier 2"></label>
+                            </div>
+                            <div class="carousel-indicators">
+                                <label for="slide1" class="dot"></label>
+                                <label for="slide2" class="dot"></label>
+                            </div>
+                        </form>
                     </section>
                     
-                    <section class="section_image">
-                        <div class="slider-wrapper">
-                          <div class="arrow left" id="prevSlide">&#10094;</div>
-                          <div class="slider-container">
-                            <div class="slider-carousel" id="manualCarousel">
-                              <div class="slider-slide"><img src="Image/CSI_atelier.png" alt="Image 1"></div>
-                              <div class="slider-slide"><img src="Image/CSI_atelier2.png" alt="Image 2"></div>
-                            </div>
-                          </div>
-                          <div class="arrow right" id="nextSlide">&#10095;</div>
-                        </div>
-                      </section>    
-                </section>
-                
-                <!-- SCOOL -->
-
-                <section id="projet_ecole" class="section_scool">
-                    <div class="title_scool">
-                        <h2>Projet Ecole</h2>
-                    </div>
-                    <div class="card-carousel">
-
-                        <!-- 1ère ligne -->
-                        <div class="card-row">
-                            <div class="card">
-                                <h3 class="title">Space Invader</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar">
-                                        <p><img src="Image/html.png" alt="HTML5" class="icon-mini"><img src="Image/css.png" alt="CSS3" class="icon-mini"><img src="Image/js.png" alt="JS" class="icon-mini"></p>
-                                    </div>
-                                </div>
-                                <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
-                            </div>
-
-                            <div class="card">
-                                <h3 class="title">Tic Tac Toe</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar">
-                                        <p><img src="Image/html.png" class="icon-mini"><img src="Image/css.png" class="icon-mini"><img src="Image/js.png" class="icon-mini"></p>
-                                    </div>
-                                </div>
-                                <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
-                            </div>
-
-                            <div class="card">
-                                <h3 class="title">Mémoire</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar">
-                                        <p><img src="Image/html.png" class="icon-mini"><img src="Image/css.png" class="icon-mini"><img src="Image/js.png" class="icon-mini"></p>
-                                    </div>
-                                </div>
-                                <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
-                            </div>
-
-                            <div class="card">
-                                <h3 class="title">Color Picker</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar">
-                                        <p><img src="Image/html.png" class="icon-mini"><img src="Image/css.png" class="icon-mini"><img src="Image/js.png" class="icon-mini"></p>
-                                    </div>
-                                </div>
-                                <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
-                            </div>
-                        </div>
-
-                        <!-- 2ème ligne -->
-                        <div class="card-row">
-                            <div class="card">
-                                <h3 class="title">Todolist</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar">
-                                        <p><img src="Image/html.png" class="icon-mini"><img src="Image/css.png" class="icon-mini"><img src="Image/js.png" class="icon-mini"></p>
-                                    </div>
-                                </div>
-                                <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
-                            </div>
-
-                            <div class="card">
-                                <h3 class="title">Fit@QO</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar">
-                                        <p><img src="Image/html.png" class="icon-mini"><img src="Image/css.png" class="icon-mini"><img src="Image/js.png" class="icon-mini"></p>
-                                    </div>
-                                </div>
-                                <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
-                            </div>
-
-                            <div class="card">
-                                <h3 class="title">Portfolio</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar">
-                                        <p><img src="Image/html.png" class="icon-mini"><img src="Image/css.png" class="icon-mini"><img src="Image/js.png" class="icon-mini"></p>
-                                    </div>
-                                </div>
-                                <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
-                            </div>
-
-                            <div class="card">
-                                <h3 class="title">Calculatrice</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar">
-                                        <p><img src="Image/html.png" class="icon-mini"><img src="Image/css.png" class="icon-mini"><img src="Image/js.png" class="icon-mini"></p>
-                                    </div>
-                                </div>
-                                <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
-                            </div>
-                        </div>
-
-                        <!-- 3ème ligne -->
-                        <div class="card-row">
-                            <div class="card">
-                                <h3 class="title">Figma</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar">
-                                        <p><img src="Image/figma.png" class="icon-mini"></p>
-                                    </div>
-                                </div>
-                                <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
-                            </div>
-
-                            <div class="card">
-                                <h3 class="title">WordPress</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar">
-                                        <p><img src="Image/wordpress.png" class="icon-mini"></p>
-                                    </div>
-                                </div>
-                                <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
-                            </div>
-
-                            <div class="card">
-                                <h3 class="title">Base de données</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar">
-                                        <p><img src="Image/sql.png" class="icon-mini"></p>
-                                    </div>
-                                </div>
-                                <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
-                            </div>
-
-                            <div class="card">
-                                <h3 class="title">GNS3 / Cisco</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar">
-                                        <p><img src="Image/reseau.png" class="icon-mini"></p>
-                                    </div>
-                                </div>
-                                <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
-                            </div>
-                        </div>
-
-                        <!-- 4ème ligne -->
-                        <div class="card-row">
-                            <div class="card">
-                                <h3 class="title">Packet Tracer</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar">
-                                        <p><img src="Image/reseau.png" class="icon-mini"></p>
-                                    </div>
-                                </div>
-                                <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
-                            </div>
-
-                            <div class="card">
-                                <h3 class="title">SharePoint</h3>
-                                <div class="bar">
-                                    <div class="emptybar"></div>
-                                    <div class="filledbar">
-                                        <p><img src="Image/sharepoint.png" class="icon-mini"></p>
-                                    </div>
-                                </div>
-                                <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
-                            </div>
-                        </div>
-                    </div>     
-                </section>
-        
-            <div class="section_bot">
-
-                <!-- MES COMPETENCES -->
-
-                <section id="competence" class="section_competence">
-                    <div class="competences">
-                        <h2 class="section-title">Mes Compétences</h2>
-                        <div class="grid">
-                            <div class="grid-item">
-                                <h3>💻 Hardware</h3>
-                                <p>Conception de PC Gamer, installation de périphériques externes</p>
+                    <section class="section_projet_pro">
+                        <div class="grid-item">
+                            <h3>Site internet SIAO</h3>
+                            <p>Création d'un site responsive pour le SIAO 115 VAR, facilitant l'accès aux informations d'hébergement et aux ressources sociales.
+                                Réalisé avec PHP, Laravel, HTML et CSS.</p>
                             </div>
                             <div class="grid-item">
-                                <h3>📀 VM VirtualBox</h3>
-                                <p>Machines virtuelles Kali Linux, Windows, Windows Server</p>
+                                <h3>Application</h3>
+                                <p>Réalisation d'une application web full-stack dans le cadre d'un projet personnel, avec une interface moderne en React et une API backend en Node.js.</p>
                             </div>
-                            <div class="grid-item">
-                                <h3>🖥️ OS</h3>
-                                <p>Utilisation de Windows et Kali Linux</p>
+                        </section>
+                        
+                        <section class="section_image">
+                            <div class="slider-wrapper">
+                              <div class="arrow left" id="prevSlide">&#10094;</div>
+                              <div class="slider-container">
+                                <div class="slider-carousel" id="manualCarousel">
+                                  <div class="slider-slide"><img src="Image/CSI_atelier.png" alt="Image 1"></div>
+                                  <div class="slider-slide"><img src="Image/CSI_atelier2.png" alt="Image 2"></div>
+                                </div>
+                              </div>
+                              <div class="arrow right" id="nextSlide">&#10095;</div>
                             </div>
-                            <div class="grid-item">
-                                <h3>🔍 Logiciels</h3>
-                                <p>Wireshark, Nmap, Hexascan, SharePoint</p>
-                            </div>
-                            <div class="grid-item">
-                                <h3>📊 Pack Office</h3>
-                                <p>Word, Excel, PowerPoint</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                          </section>    
+                    </section>
+                    
+                    <!-- SCOOL -->
     
-                <!-- VEILLE -->
+                    <section id="projet_ecole" class="section_scool">
+                        <div class="title_scool">
+                            <h2>Projet Ecole</h2>
+                        </div>
+                        <div class="card-carousel">
     
-                <section id="veille" class="veille">
-                    <div class="title_veille">
-                        <h2>MA VEILLE</h2>
-                    </div>
-                    <div class="veilles">
-                        <div class="mes_veilles">
-                            <a id="veille_1" href="https://urgencecyber-regionsud.fr/">URGENCE CYBER REGION SUD</a>       
-                            <p>Retrouvez les dernières actualités cyber et les mises à jour 
-                                récentes dans cette nouvelle édition du CYBER'ACTU.
-                            </p>
+                            <!-- 1ère ligne -->
+                            <div class="card-row">
+                                <div class="card">
+                                    <h3 class="title">Space Invader</h3>
+                                    <div class="bar">
+                                        <div class="emptybar"></div>
+                                        <div class="filledbar">
+                                            <p><img src="Image/html.png" alt="HTML5" class="icon-mini"><img src="Image/css.png" alt="CSS3" class="icon-mini"><img src="Image/js.png" alt="JS" class="icon-mini"></p>
+                                        </div>
+                                    </div>
+                                    <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
+                                </div>
+    
+                                <div class="card">
+                                    <h3 class="title">Tic Tac Toe</h3>
+                                    <div class="bar">
+                                        <div class="emptybar"></div>
+                                        <div class="filledbar">
+                                            <p><img src="Image/html.png" class="icon-mini"><img src="Image/css.png" class="icon-mini"><img src="Image/js.png" class="icon-mini"></p>
+                                        </div>
+                                    </div>
+                                    <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
+                                </div>
+    
+                                <div class="card">
+                                    <h3 class="title">Mémoire</h3>
+                                    <div class="bar">
+                                        <div class="emptybar"></div>
+                                        <div class="filledbar">
+                                            <p><img src="Image/html.png" class="icon-mini"><img src="Image/css.png" class="icon-mini"><img src="Image/js.png" class="icon-mini"></p>
+                                        </div>
+                                    </div>
+                                    <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
+                                </div>
+    
+                                <div class="card">
+                                    <h3 class="title">Color Picker</h3>
+                                    <div class="bar">
+                                        <div class="emptybar"></div>
+                                        <div class="filledbar">
+                                            <p><img src="Image/html.png" class="icon-mini"><img src="Image/css.png" class="icon-mini"><img src="Image/js.png" class="icon-mini"></p>
+                                        </div>
+                                    </div>
+                                    <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
+                                </div>
+                            </div>
+    
+                            <!-- 2ème ligne -->
+                            <div class="card-row">
+                                <div class="card">
+                                    <h3 class="title">Todolist</h3>
+                                    <div class="bar">
+                                        <div class="emptybar"></div>
+                                        <div class="filledbar">
+                                            <p><img src="Image/html.png" class="icon-mini"><img src="Image/css.png" class="icon-mini"><img src="Image/js.png" class="icon-mini"></p>
+                                        </div>
+                                    </div>
+                                    <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
+                                </div>
+    
+                                <div class="card">
+                                    <h3 class="title">Fit@QO</h3>
+                                    <div class="bar">
+                                        <div class="emptybar"></div>
+                                        <div class="filledbar">
+                                            <p><img src="Image/html.png" class="icon-mini"><img src="Image/css.png" class="icon-mini"><img src="Image/js.png" class="icon-mini"></p>
+                                        </div>
+                                    </div>
+                                    <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
+                                </div>
+    
+                                <div class="card">
+                                    <h3 class="title">Portfolio</h3>
+                                    <div class="bar">
+                                        <div class="emptybar"></div>
+                                        <div class="filledbar">
+                                            <p><img src="Image/html.png" class="icon-mini"><img src="Image/css.png" class="icon-mini"><img src="Image/js.png" class="icon-mini"></p>
+                                        </div>
+                                    </div>
+                                    <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
+                                </div>
+    
+                                <div class="card">
+                                    <h3 class="title">Calculatrice</h3>
+                                    <div class="bar">
+                                        <div class="emptybar"></div>
+                                        <div class="filledbar">
+                                            <p><img src="Image/html.png" class="icon-mini"><img src="Image/css.png" class="icon-mini"><img src="Image/js.png" class="icon-mini"></p>
+                                        </div>
+                                    </div>
+                                    <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
+                                </div>
+                            </div>
+    
+                            <!-- 3ème ligne -->
+                            <div class="card-row">
+                                <div class="card">
+                                    <h3 class="title">Figma</h3>
+                                    <div class="bar">
+                                        <div class="emptybar"></div>
+                                        <div class="filledbar">
+                                            <p><img src="Image/figma.png" class="icon-mini"></p>
+                                        </div>
+                                    </div>
+                                    <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
+                                </div>
+    
+                                <div class="card">
+                                    <h3 class="title">WordPress</h3>
+                                    <div class="bar">
+                                        <div class="emptybar"></div>
+                                        <div class="filledbar">
+                                            <p><img src="Image/wordpress.png" class="icon-mini"></p>
+                                        </div>
+                                    </div>
+                                    <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
+                                </div>
+    
+                                <div class="card">
+                                    <h3 class="title">Base de données</h3>
+                                    <div class="bar">
+                                        <div class="emptybar"></div>
+                                        <div class="filledbar">
+                                            <p><img src="Image/sql.png" class="icon-mini"></p>
+                                        </div>
+                                    </div>
+                                    <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
+                                </div>
+    
+                                <div class="card">
+                                    <h3 class="title">GNS3 / Cisco</h3>
+                                    <div class="bar">
+                                        <div class="emptybar"></div>
+                                        <div class="filledbar">
+                                            <p><img src="Image/reseau.png" class="icon-mini"></p>
+                                        </div>
+                                    </div>
+                                    <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
+                                </div>
+                            </div>
+    
+                            <!-- 4ème ligne -->
+                            <div class="card-row">
+                                <div class="card">
+                                    <h3 class="title">Packet Tracer</h3>
+                                    <div class="bar">
+                                        <div class="emptybar"></div>
+                                        <div class="filledbar">
+                                            <p><img src="Image/reseau.png" class="icon-mini"></p>
+                                        </div>
+                                    </div>
+                                    <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
+                                </div>
+    
+                                <div class="card">
+                                    <h3 class="title">SharePoint</h3>
+                                    <div class="bar">
+                                        <div class="emptybar"></div>
+                                        <div class="filledbar">
+                                            <p><img src="Image/sharepoint.png" class="icon-mini"></p>
+                                        </div>
+                                    </div>
+                                    <div class="circle"><svg width="60" height="60"><circle class="stroke" cx="60" cy="60" r="20"/></svg></div>
+                                </div>
+                            </div>
+                        </div>     
+                    </section>
+            
+                <div class="section_bot">
+    
+                    <!-- MES COMPETENCES -->
+    
+                    <section id="competence" class="section_competence">
+                        <div class="competences">
+                            <h2 class="section-title">Mes Compétences</h2>
+                            <div class="grid">
+                                <div class="grid-item">
+                                    <h3>💻 Hardware</h3>
+                                    <p>Conception de PC Gamer, installation de périphériques externes</p>
+                                </div>
+                                <div class="grid-item">
+                                    <h3>📀 VM VirtualBox</h3>
+                                    <p>Machines virtuelles Kali Linux, Windows, Windows Server</p>
+                                </div>
+                                <div class="grid-item">
+                                    <h3>🖥️ OS</h3>
+                                    <p>Utilisation de Windows et Kali Linux</p>
+                                </div>
+                                <div class="grid-item">
+                                    <h3>🔍 Logiciels</h3>
+                                    <p>Wireshark, Nmap, Hexascan, SharePoint</p>
+                                </div>
+                                <div class="grid-item">
+                                    <h3>📊 Pack Office</h3>
+                                    <p>Word, Excel, PowerPoint</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="mes_veilles">
-                            <a id="veille_2" href="https://www.theverge.com/">THE VERGE</a>
-                            <p>ChatGPT is transforming LinkedIn users into really dull dolls</p>
-                        </div>
-                        <div class="mes_veilles">
-                            <a id="veille_3" href="https://www.cert.ssi.gouv.fr/">CERT</a>
-                            <p>CERTFR-2025-ALE-004
-                                Activités de post-exploitation dans Fortinet FortiGate
-                            </p>
-                        </div>
-                        <div class="mes_veilles">
-                            <a id="veille_4" href="https://mashable.com/tech">MASHABLE</a>
-                            <p>4 of the best robocall-blocking apps and tools for avoiding phone spam</p>
-                        </div>
-                    </div>
-                </section>
+                    </section>
         
-                <!-- CONTACT -->
-                 
-                <footer class="footer" id="contact">
-                    <h2>Contact</h2>
-                    <p>Email : <a href="mailto:yoan83@outlook.com">yoan83@outlook.com</a></p>
-                    <p>Téléphone : <a href="tel:+33617058787">+33 6 17 05 87 87</a></p>
-                    <div class="socials">
-                        <a href="https://linkedin.com/in/moritzyoan" target="_blank">LinkedIn</a>
-                        <a href="https://github.com/moritzyoan" target="_blank">GitHub</a>
-                        <a href="https://twitter.com/moritzyoan" target="_blank">Twitter</a>
-                    </div>
-                </footer>
-
-            </div>  
+                    <!-- VEILLE -->
+        
+                    <section id="veille" class="veille">
+                        <div class="title_veille">
+                            <h2>MA VEILLE</h2>
+                        </div>
+                        <div class="veilles">
+                            <div class="mes_veilles">
+                                <a id="veille_1" href="https://urgencecyber-regionsud.fr/">URGENCE CYBER REGION SUD</a>       
+                                <p>Retrouvez les dernières actualités cyber et les mises à jour 
+                                    récentes dans cette nouvelle édition du CYBER'ACTU.
+                                </p>
+                            </div>
+                            <div class="mes_veilles">
+                                <a id="veille_2" href="https://www.theverge.com/">THE VERGE</a>
+                                <p>ChatGPT is transforming LinkedIn users into really dull dolls</p>
+                            </div>
+                            <div class="mes_veilles">
+                                <a id="veille_3" href="https://www.cert.ssi.gouv.fr/">CERT</a>
+                                <p>CERTFR-2025-ALE-004
+                                    Activités de post-exploitation dans Fortinet FortiGate
+                                </p>
+                            </div>
+                            <div class="mes_veilles">
+                                <a id="veille_4" href="https://mashable.com/tech">MASHABLE</a>
+                                <p>4 of the best robocall-blocking apps and tools for avoiding phone spam</p>
+                            </div>
+                        </div>
+                    </section>
+            
+                    <!-- CONTACT -->
+                     
+                    <footer class="footer" id="contact">
+                        <h2>Contact</h2>
+                        <p>Email : <a href="mailto:yoan83@outlook.com">yoan83@outlook.com</a></p>
+                        <p>Téléphone : <a href="tel:+33617058787">+33 6 17 05 87 87</a></p>
+                        <div class="socials">
+                            <a href="https://linkedin.com/in/moritzyoan" target="_blank">LinkedIn</a>
+                            <a href="https://github.com/moritzyoan" target="_blank">GitHub</a>
+                            <a href="https://twitter.com/moritzyoan" target="_blank">Twitter</a>
+                        </div>
+                    </footer>
+    
+                </div>  
+            </div>
         </div>
-    </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="script.js"></script>
-</body> 
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="script.js"></script>
+        </div>
+    </body> 
+        
 </html>
