@@ -1,0 +1,109 @@
+
+/* Nav responsive  */
+
+@media screen and (max-width: 1950px) {
+    .nav-column {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.8);
+      border-right: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+  
+    .nav-column .logo {
+      padding-top: 0;
+      margin-bottom: 0;
+    }
+  
+    .nav-column .nav-links {
+      flex-direction: row;
+      gap: 40px;
+      margin-top: 0;
+    }
+  
+    .nav-column .nav-links a {
+      font-size: 1rem;
+    }
+  
+    .section_principal {
+      margin-left: 0;
+      padding-top: 120px; /* espace sous la nav horizontale */
+    }
+  }
+
+  /* Burger Nav */
+
+  
+  @media screen and (max-width: 1050px) {
+    .nav-column {
+        position: fixed;
+        top: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: calc(100% - 40px); /* 20px de chaque côté */
+        max-width: 100%;
+        background: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 12px;
+        z-index: 9999;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+      }
+  
+    .nav-column .logo {
+      color: #fff;
+      font-size: 1.5rem;
+      margin: 0;
+    }
+  
+    .burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 4px;
+      cursor: pointer;
+    }
+  
+    .burger span {
+      height: 3px;
+      width: 25px;
+      background: #fff;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+  
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      height: 100vh;
+      width: 250px;
+      background: rgba(0, 0, 0, 0.95);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      transition: right 0.3s ease-in-out;
+    }
+  
+    .nav-links.active {
+      right: 0;
+    }
+  }
+  
+  
+

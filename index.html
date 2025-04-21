@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="Style/carousel.css">
         <link rel="stylesheet" href="Style/mes_projet_ecole.css">
+        <link rel="stylesheet" href="responsive.css">
 
 </head>
 <body>
@@ -18,11 +19,21 @@
             <!-- SIDEBAR NAVIGATION -->
 
             <aside class="nav-column">
-                <div class="logo">MY</div>
+                <div class="logo" id="logo">MY</div>
+
+                <div class="burger" id="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
                 <nav class="nav-links">
-                    <a href="#competences">Compétences</a>
-                    <a href="#projets">Projets</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#moi">Présentation</a>
+                    <a href="#projet_pro">Projet Proffessionnel</a>
+                    <a href="#projet_ecole">Projet Ecole</a>
+                    <a href="#competence">Mes Compétences</a>
+                    <a href="#veille">Ma Veille</a>
+                    <a href="#contact">Me contacter</a>
                 </nav>
             </aside>
             
@@ -40,7 +51,7 @@
 
             <!-- PRESENTATION -->
             
-            <section class="section_presentation">
+            <section id="moi" class="section_presentation">
                 <div class="column-1">
                     <p id="presentation_1">
                         Passionné d'informatique depuis des années, j'ai décidé d'en faire mon 
@@ -61,7 +72,7 @@
             
             <!-- EXPERIENCE PRO -->
             
-            <section class="section_pro">
+            <section id="projet_pro" class="section_pro">
                 <div class="title_pro">
                     <h2>Projet Professionnel</h2>
                 </div>
@@ -109,7 +120,7 @@
                 
                 <!-- SCOOL -->
 
-                <section class="section_scool">
+                <section id="projet_ecole" class="section_scool">
                     <div class="title_scool">
                         <h2>Projet Ecole</h2>
                     </div>
@@ -287,7 +298,7 @@
 
                 <!-- MES COMPETENCES -->
 
-                <section class="section_competence">
+                <section id="competence" class="section_competence">
                     <div class="competences">
                         <h2 class="section-title">Mes Compétences</h2>
                         <div class="grid">
@@ -317,7 +328,7 @@
     
                 <!-- VEILLE -->
     
-                <section class="veille">
+                <section id="veille" class="veille">
                     <div class="title_veille">
                         <h2>MA VEILLE</h2>
                     </div>
