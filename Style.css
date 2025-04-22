@@ -139,9 +139,12 @@ a {
   background-color: black;
   text-align: center;
   font-size: 100px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 /* ========== SECTION PRÉSENTATION (3 COLONNES) ========== */
+
 .section_presentation {
   background-color: black;
   display: flex;
@@ -225,6 +228,7 @@ a {
 
 
 /* ========== SECTION PROJETS EN FLEX ========== */
+
 .section_pro {
   background-color: #1e1e1e;
   display: flex;
@@ -246,7 +250,7 @@ a {
 
 .section_image {
   margin-top: -10px;
-  padding-left: 120px;
+  margin: 15px;
 }
 
 .grid-item {
@@ -274,6 +278,36 @@ a {
   color: #ccc;
 }
 
+.slider-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slider-carousel {
+  display: flex;
+  width: 100%;
+}
+
+.slider-slide {
+  min-width: 100%;
+  flex-shrink: 0;
+
+}
+
+.slider-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* ========== SCOOL ========== */
 
 .section_scool {
@@ -281,8 +315,6 @@ a {
   flex-direction: column;
   background-color: black;
 }
-
-
 
 .title_scool {
   margin-top: 50px;
