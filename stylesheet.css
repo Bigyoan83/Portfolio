@@ -1,21 +1,32 @@
-@font-face {
-    font-family: 'PPPlayground';
-    src: url('font/PPPlayground-Light.woff2') format('woff2'),
-         url('font/PPPlayground-Light.woff') format('woff');
-    font-weight: 300;
+  @font-face {
+     font-family: 'PP Playground' ;
+     src: url('font/PPPangaia-Medium.woff') format('woff');
+     font-weight: 100;
   }
   
   @font-face {
-    font-family: 'PPPlayground';
-    src: url('font/PPPlayground-Medium.woff2') format('woff2'),
-         url('font/PPPlayground-Medium.woff') format('woff');
-    font-weight: 500;
+     font-family: 'PP Playground' ;
+     src: url('font/PPPangaia-MediumItalic.woff') format('woff');
+     font-weight: 100;
   }
   
   @font-face {
-    font-family: 'PPPlayground';
-    src: url('font/PPPlayground-Thin.woff2') format('woff2'),
-         url('font/PPPlayground-Thin.woff') format('woff');
-    font-weight: 100;
+     font-family: 'PP Playground' ;
+     src: url('font/PPPangaia-BoldItalic.woff') format('woff');
+     font-weight: 150;
+  }
+  
+  
+  @font-face {
+     font-family: 'PP Playground' ;
+     src: url('font/PPPangaia-UltralightItalic.woff') format('woff');
+     font-weight: 200;
+  }
+  
+  
+  @font-face {
+     font-family: 'PP Playground' ;
+     src: url('font/PPPangaia-Ultralight.woff') format('woff');
+     font-weight: 200;
   }
   

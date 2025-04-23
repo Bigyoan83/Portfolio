@@ -87,25 +87,23 @@ a {
 }
 
 #presentation_1, #presentation_2 {
-  font-size: 40px;
+  font-size: 25px;
   color: rgb(95, 95, 95);
 }
 
 #titre {
-  font-size: 120px;
-  font-family: 'PPPlayground', sans-serif;
+  font-size: 100px;
+  font-family: 'PP Playground', sans-serif;
 }
 
 #sous_titre {
+  font-family: 'PP Playground', sans-serif;
   font-size: 100px;
-  font-family: 'PPPlayground', sans-serif;
-  font-weight: 400;
 }
 
 #nom {
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-size: 50px;
+  font-family: 'PP Playground', sans-serif;
+  font-size: 70px;
 }
 
 /* ========== GRILLE RESPONSIVE ========== */
@@ -357,6 +355,15 @@ a {
 
 .title_veille h2 {
   color: #000000;
+}
+
+#intro_veille {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
 }
 
 .mes_veilles {
