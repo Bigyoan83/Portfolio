@@ -48,7 +48,8 @@ a {
   border-top-right-radius: 30px;
   position: relative;
   z-index: 20;
-  margin-top: 100px;
+  margin-top: 20px;
+  background-color: #000000;
 }
 
 .mobile-header {
@@ -137,8 +138,6 @@ a {
   background-color: black;
   text-align: center;
   font-size: 100px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
 }
 
 /* ========== SECTION PRÉSENTATION (3 COLONNES) ========== */
