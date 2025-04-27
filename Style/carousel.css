@@ -1,135 +1,92 @@
+.carousel-form {
+  width: 950px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  background: transparent;
+}
+
 .carousel-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    margin-top: -50px;
-  }
-  
-  .carousel_projet {
-    position: relative;
-    height: 500px;
-    margin-bottom: -100px;
-    padding-left: 100px;
-  }
-  
-  
-  .carousel-item {
-    flex: 1 0 100%;
-    height: 100%;
-    transition: opacity 0.5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  input#slide1:checked ~ .carousel-container label[for="slide1"],
-  input#slide2:checked ~ .carousel-container label[for="slide2"] {
-    opacity: 1;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .carousel-form input[type="radio"] {
-    display: none;
-  }
-  
-  .carousel-indicators {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    position: absolute;
-    top: 15px;
-    width: 50%;
-    z-index: 3;
-  }
-  
-  .carousel-indicators .dot {
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: #bbb;
-    cursor: pointer;
-  }
-  
-  input#slide1:checked ~ .carousel-indicators label[for="slide1"],
-  input#slide2:checked ~ .carousel-indicators label[for="slide2"] {
-    background: #ffcc00;
-  }
-  
-  .carousel-item img {
-    width: 50%;
-    height: 100%;
-    object-fit: contain;
-    margin-left: 50px;
-  }
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 
+.carousel-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding-right: 100px;
+  padding-left: 20px;
+}
 
-/* Carousel 2 */
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
 
-.slider-wrapper {
-    width: 1300px;
-    height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 5px 5px 25px rgba(46, 61, 73, 0.2);
-    margin: 50px auto;
-    background: #000;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .slider-container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  .slider-carousel {
-    display: flex;
-    width: 100%; 
-    height: 100%;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .slider-slide {
-    width: 100%;
-    height: 100%;
-    flex-shrink: 0;
-    display: flex;
-  }
-  
-  .slider-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* remplir tout l'espace */
-  }
-  
-  
-  .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2.5rem;
-    color: white;
-    background: rgba(0,0,0,0.5);
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-    user-select: none;
-  }
-  
-  .arrow.left {
-    left: 10px;
-  }
-  
-  .arrow.right {
-    right: 10px;
-  }
-  
+/* Affiche seulement l'image cliquée */
+/* Carrousel 1 - Application CSI */
+#slide1:checked ~ .carousel-container label[for="slide1"],
+#slide2:checked ~ .carousel-container label[for="slide2"],
+#slide3:checked ~ .carousel-container label[for="slide3"],
+#slide4:checked ~ .carousel-container label[for="slide4"] {
+  display: flex;
+}
 
+/* Carrousel 2 - Site SIAO */
+#slide1_siao:checked ~ .carousel-container label[for="slide1_siao"],
+#slide2_siao:checked ~ .carousel-container label[for="slide2_siao"],
+#slide3_siao:checked ~ .carousel-container label[for="slide3_siao"],
+#slide4_siao:checked ~ .carousel-container label[for="slide4_siao"] {
+  display: flex;
+}
 
-  
+.carousel-form input[type="radio"] {
+  display: none;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  position: absolute;
+  top: 15px;
+  width: 50%;
+  z-index: 3;
+}
+
+.carousel-indicators .dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #bbb;
+  cursor: pointer;
+}
+
+/* Carrousel 1 - Application CSI */
+input#slide1:checked ~ .carousel-indicators label[for="slide1"],
+input#slide2:checked ~ .carousel-indicators label[for="slide2"],
+input#slide3:checked ~ .carousel-indicators label[for="slide3"],
+input#slide4:checked ~ .carousel-indicators label[for="slide4"] {
+  background: #ffcc00;
+}
+
+/* Carrousel 2 - Site SIAO */
+input#slide1_siao:checked ~ .carousel-indicators label[for="slide1_siao"],
+input#slide2_siao:checked ~ .carousel-indicators label[for="slide2_siao"],
+input#slide3_siao:checked ~ .carousel-indicators label[for="slide3_siao"],
+input#slide4_siao:checked ~ .carousel-indicators label[for="slide4_siao"] {
+  background: #ff0000;
+}
+
 

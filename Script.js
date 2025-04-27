@@ -42,33 +42,7 @@ window.addEventListener('scroll', () => {
       if (radio2.checked) radio1.checked = true;
       else radio2.checked = true;
     }
-  });
-
-
-  //Carousel 2 
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const carousel = document.getElementById("manualCarousel");
-    const nextBtn = document.getElementById("nextSlide");
-    const prevBtn = document.getElementById("prevSlide");
-  
-    let currentSlide = 0;
-    const totalSlides = carousel.children.length;
-  
-    function updateSlidePosition() {
-      carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
-  
-    nextBtn.addEventListener("click", () => {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      updateSlidePosition();
-    });
-  
-    prevBtn.addEventListener("click", () => {
-      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-      updateSlidePosition();
-    });
-  });
+  });S
 
   //Nav responsive
 
