@@ -1,0 +1,106 @@
+/* ========== SECTION PROJETS ========== */
+
+/* ========== SECTION PROJETS 1 ========== */
+
+.section_pro {
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 100%;
+  }
+  
+  #projet_pro_1 {
+    margin-bottom: 100px;
+  }
+  
+  .title_pro h2 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .section_projet_pro {
+    display: flex;
+    margin-top: -80px; /* Réduit l'espace en dessous */
+    margin-top: 1px;
+  }
+  
+  .grid-item {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.3rem;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+  
+  .grid-item-2 {
+    font-size: 17px;
+    padding-left: 20px;
+    padding-right: 100px;
+  }
+  
+  .section_projet_pro h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+  }
+  
+  .section_projet_pro p {
+    color: #ccc;
+  }
+  
+  #link_project {
+    display: inline-block;
+    margin-top: 20px;
+    color: #ffcc00; 
+    text-decoration: none; 
+    font-weight: bold; 
+  }
+  
+  
+  /* ========== SECTION PROJETS 2 ========== */
+  
+  #projet_pro_2 {
+    background-color: #d5d5d5;
+    padding-top: 30px;
+  }
+  
+  .section_projet_pro_siao {
+    display: flex;
+    margin-top: -80px;
+    margin-top: 1px;
+    margin-bottom: 100px;
+    color: #727272;
+  }
+  
+  .section_projet_pro_siao h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff0000;
+  }
+  
+  .grid-item-siao {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.3rem;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+  
+  .grid-item-2-siao {
+    font-size: 17px;
+    padding-left: 20px;
+    padding-right: 100px;
+  }
+  
+  #link_project_siao {
+    display: inline-block;
+    margin-top: 20px; 
+    color: #ff0000;
+    text-decoration: none; 
+    font-weight: bold;
+  }

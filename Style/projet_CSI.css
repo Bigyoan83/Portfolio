@@ -1,0 +1,135 @@
+#logi_CSI {
+    width: 300px;
+    height: 150px;
+}
+
+#image_CSI {
+    width: 950px;
+    height: 550px;
+}
+
+.img_CSI {
+    display: flex;
+    justify-content: center;
+}
+
+.section_presentation {
+    padding-top: 100px;
+    background-color: black;
+}
+
+.bloc-1 {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 50px 20px; 
+  }
+  
+  .bloc-1 h2 {
+    font-family: 'PP Playground', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .bloc-1 p {
+    font-size: 20px;
+    line-height: 1.6; 
+    text-align: left;
+    color: #f1f1f1;
+  }
+  
+  .bloc-2 {
+    max-width: 800px;
+    margin: 0 auto; /* Centré horizontalement */
+    padding: 100px 20px; /* Un peu d'espace en haut */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre tout (h2 et ul) */
+    text-align: center;
+  }
+  
+  .bloc-2 h2 {
+    font-family: 'PP Playground', sans-serif;
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  
+  .bloc-2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Texte à gauche */
+  }
+  
+  .bloc-2 li {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #f1f1f1;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .bloc-2 li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 8px;
+    height: 8px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+  }
+
+  .img-langage {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .bloc-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centre horizontalement */
+    background-color: #000000; /* noir, comme ton site */
+    padding: 80px 20px;
+  }
+  
+  .bloc-3 .section-title {
+    margin-bottom: 50px;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'PP Playground', sans-serif;
+  }
+  
+  .grid_competence {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes obligatoires */
+    gap: 40px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto; /* centre la grille */
+  }
+  
+  .grid-item-competence {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .grid-item-competence:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  }
+  
+  .img-langage {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  

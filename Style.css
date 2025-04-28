@@ -25,12 +25,73 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #f1f1f1;
+  font-family: 'PP Playground', sans-serif;
 }
 
 a {
   color: #f1f1f1;
   text-decoration: none;
 }
+
+/* NAV */
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  }
+  
+  .main-header {
+      background: black;
+      color: white;
+      top: 0;
+      z-index: 10000;
+      border-radius: 10px;
+      margin-top: 30px;
+  }
+  
+  .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+  }
+  
+  .mini_logo {
+      font-size: 1.1rem;
+      font-weight: bold;
+  }
+  
+  .nav {
+      display: flex;
+      gap: 25px;
+      margin: 10px;
+  }
+  
+  .nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+      color: #f39c12;
+    }
+    
+    .burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+  }
+  
+  .burger span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background: white;
+      border-radius: 3px;
+  }
 
 /* ========== SECTION GÉNÉRALE ========== */
 
@@ -49,6 +110,7 @@ a {
   position: relative;
   z-index: 20;
   margin-top: 20px;
+  padding: 50px;
   background-color: #000000;
 }
 
@@ -68,8 +130,8 @@ a {
 }
 
 .logo img {
-  width : 400px;
-  height : 400px;
+  width : 300px;
+  height : 300px;
 }
 
 /* ========== SECTION HERO INTRO ========== */
@@ -107,64 +169,12 @@ a {
   font-size: 70px;
 }
 
-/* ========== GRILLE RESPONSIVE ========== */
-
-
 /* ========== SECTIONS SPÉCIALES ========== */
 
 .section_titre {
   background-color: black;
   text-align: center;
   font-size: 100px;
-}
-
-/* ========== SECTION PRÉSENTATION (3 COLONNES) ========== */
-
-.section_presentation {
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 200px 40px;
-  color: #fff;
-  gap: 40px;
-  min-height: 500px;
-}
-
-.column-1, .column-3 {
-  flex: 1;
-  min-width: 0;
-  padding-left: 40px ;
-}
-
-.column-2 {
-  width: 2px;
-  background-color: #555;
-  height: 100%;
-  align-self: stretch;
-  min-height: 500px;
-}
-
-/* ========== PROFIL (NOM + IMAGE) ========== */
-.profile-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.profile-pic {
-  width: 325px;
-  height: 474px;
-  object-fit: cover;
-  margin-bottom: 20px;
-}
-
-.profile-box h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: #fff;
 }
 
 /* ========== LIENS SPÉCIAUX DANS PRÉSENTATION ========== */
@@ -202,324 +212,14 @@ a {
   margin-top: 10px;
 }
 
-/* ========== SECTION PROJETS ========== */
-
-/* ========== SECTION PROJETS 1 ========== */
-
-.section_pro {
-  background-color: #1e1e1e;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 100%;
-}
-
-#projet_pro_1 {
-  margin-bottom: 100px;
-}
-
-.title_pro h2 {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.section_projet_pro {
-  display: flex;
-  margin-top: -80px; /* Réduit l'espace en dessous */
-  margin-top: 1px;
-}
-
-.grid-item {
-  border-radius: 12px;
-  width: 100%;
-  max-width: 500px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-size: 1.3rem;
-  padding-left: 40px;
-  padding-right: 20px;
-}
-
-.grid-item-2 {
-  font-size: 17px;
-  padding-left: 20px;
-  padding-right: 100px;
-}
-
-.section_projet_pro h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #ffcc00;
-}
-
-.section_projet_pro p {
-  color: #ccc;
-}
-
-#link_project {
-  display: inline-block;
-  margin-top: 20px;
-  color: #ffcc00; 
-  text-decoration: none; 
-  font-weight: bold; 
-}
 
 
-/* ========== SECTION PROJETS 2 ========== */
-
-#projet_pro_2 {
-  background-color: #d5d5d5;
-  padding-top: 30px;
-}
-
-.section_projet_pro_siao {
-  display: flex;
-  margin-top: -80px;
-  margin-top: 1px;
-  margin-bottom: 100px;
-}
-
-.section_projet_pro_siao h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #ff0000;
-}
-
-.grid-item-siao {
-  border-radius: 12px;
-  width: 100%;
-  max-width: 500px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-size: 1.3rem;
-  padding-left: 40px;
-  padding-right: 20px;
-}
-
-.grid-item-2-siao {
-  font-size: 17px;
-  padding-left: 20px;
-  padding-right: 100px;
-}
-
-#link_project_siao {
-  display: inline-block;
-  margin-top: 20px; 
-  color: #ff0000;
-  text-decoration: none; 
-  font-weight: bold;
-}
 
 
-/* ========== SCOOL ========== */
 
-.section_scool {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(0, 26, 255);
-}
 
-.title_scool {
-  margin-top: 50px;
-}
 
-.filledbar p {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px;
-  margin-top: 10px;
-  padding: 0;
-}
 
-.description {
-  position: absolute;
-  top: 40px;
-  left: 12px;
-  right: 12px;
-  font-size: 12px;
-  color: #cccccc;
-  text-align: left;
-  line-height: 1.4;
-}
-
-#link_project_ecole {
-  color: rgb(36, 58, 255);
-}
-
-/* ========== COMPETENCES ========== */
-
-.section_competence {
-  background: #2d2f34;
-  padding: 80px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.grid_competence {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
-  gap: 60px 80px; /* espace vertical ET horizontal */
-  max-width: 1000px;
-  width: 100%;
-  margin-top: 50px;
-}
-
-.grid-item-competence {
-  background-color: #1e1e1e;
-  overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-}
-
-.grid-item-competence:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
-}
-
-.img-competence {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-.grid-item-competence h3 {
-  font-size: 1.5rem;
-  color: #ffffff;
-  margin: 20px;
-}
-
-.grid-item-competence p {
-  font-size: 1rem;
-  color: #cccccc;
-  margin: 0 20px 20px 20px;
-  line-height: 1.4;
-}
-
-/* Effet quinconce : décale légèrement toutes les 2ème cartes */
-.grid-item-competence:nth-child(2n) {
-  transform: translateY(50px);
-}
-
-/* ========== VEILLE ========== */
-
-.veille {
-  background-color: #000;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.veilles {
-  display: flex;
-}
-
-.title_veille h2 {
-  color: #000000;
-}
-
-#intro_veille {
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-  color: white;
-  border-radius: 10px;
-}
-
-.mes_veilles {
-  background-color: black;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  padding: 20px;
-  margin: 20px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.mes_veilles:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.mes_veilles a {
-  font-size: 18px;
-  font-weight: bold;
-  color: #f20404;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
-.mes_veilles a:hover {
-  text-decoration: underline;
-}
-
-.mes_veilles p {
-  font-size: 14px;
-  color: #ffffff;
-  line-height: 1.5;
-}
-
-/* ========== FOTTER ========== */
-.footer {
-  background-color: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
-  overflow: hidden;
-}
-
-.pilier {
-  height: 300px;
-  width: 200px;
-  margin-top: 100px;
-  bottom: 0;
-}
-
-.content-arches {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 100px;
-}
-
-.arche {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.arche-img {
-  height: 500px;
-  width: 250px;
-}
-
-.arche-text {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.arche-text a {
-  display: block;
-  margin: 8px 0;
-  color: #f1f1f1;
-  text-decoration: none;
-  font-size: 18px;
-  font-family: 'MaisonNeue-Bold', sans-serif;
-}
-
-.arche-text a:hover {
-  text-decoration: underline;
-}
 
 
 

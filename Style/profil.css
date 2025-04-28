@@ -1,0 +1,48 @@
+/* ========== SECTION PRÉSENTATION (3 COLONNES) ========== */
+
+.section_presentation {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 40px;
+    color: #fff;
+    gap: 40px;
+    min-height: 500px;
+  }
+  
+  .column-1, .column-3 {
+    flex: 1;
+    min-width: 0;
+    padding-left: 40px ;
+  }
+  
+  .column-2 {
+    width: 2px;
+    background-color: #555;
+    height: 100%;
+    align-self: stretch;
+    min-height: 500px;
+  }
+  
+  /* ========== PROFIL (NOM + IMAGE) ========== */
+  .profile-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 325px;
+    height: 474px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .profile-box h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+  }
