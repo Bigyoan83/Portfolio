@@ -97,7 +97,7 @@
           gap: 30px;
         }
         
-        .section_projet_pro {
+        .section_projet_pro, .section_projet_pro_siao {
           margin-top: 0;
           padding-top: 0;
           flex-direction: column;
@@ -105,7 +105,7 @@
           align-items: center;
         }
         
-        .section_projet_pro .grid-item {
+        .section_projet_pro .grid-item, .section_projet_pro_siao .grid-item-siao {
           margin: 20px 0;
           max-width: 100%;
           padding: 20px;
