@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Scroll effect on navbar
+
 window.addEventListener('scroll', () => {
     const nav = document.querySelector('.nav-header');
     if (window.scrollY > 20) {
@@ -42,7 +43,7 @@ window.addEventListener('scroll', () => {
       if (radio2.checked) radio1.checked = true;
       else radio2.checked = true;
     }
-  });S
+  });
 
   //Nav responsive
 
@@ -79,6 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
     burger.classList.toggle("open");
   });
 });
+
 
 window.addEventListener("scroll", () => {
   const header = document.querySelector(".mobile-header");

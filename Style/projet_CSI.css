@@ -137,5 +137,9 @@
     height: auto;
     object-fit: contain;
   }
+
+  #link_project_CSI {
+    color: aqua;
+  }
   
   
